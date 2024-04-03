@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @surfrrs
 - 👀 I’m interested in Github, Jenkins, Kubernetes, Docker, JS, AWS
-- 🌱 I’m currently building Landmark.Lock
+- 🌱 I’m currently building landmark-lock.com
 - 💞️ I’m looking to collaborate on a Payment Gateway
 - 📫 How to reach me surfrrs@yahoo.com
 
