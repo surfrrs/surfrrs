@@ -48,9 +48,7 @@ test("Log into AWS as Root", async ({ page }) => {
 	await page.getByPlaceholder("username@example.com").fill(`${arrIDPW[0]}`);
 	await page.getByRole("button", { name: "Next" }).click();
 	await page.getByRole('textbox', { name: 'Password' }).fill(`${arrIDPW[1]}`);
-	//await page.getByRole('checkbox', { name: 'Show password' }).check();
 	await page.getByTestId('signin-button').click();
-	//await page.locator('div').nth(2).click();
 	await page.waitForTimeout(10000);
 	await page.getByRole('link', { name: 'Instances', exact: true }).click();
 	await page.waitForTimeout(5000);
@@ -58,7 +56,6 @@ test("Log into AWS as Root", async ({ page }) => {
 	await page.goto(
 			"https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Home:",
 		);
-	await page.pause();
 });
 
 test("Create AWS VM", async ({ browser }) => {
