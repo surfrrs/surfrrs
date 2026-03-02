@@ -25,6 +25,8 @@ const { exec } = require("node:child_process");
 
 const envIDPW = process.env.IDPW;
 const arrIDPW = envIDPW.split(',');
+const envJOBID = process.env.JOBID_TN;
+const arrJOBID = envJOBID.split(',');
 
 test("Log into AWS as Root", async ({ page }) => {
 	test.slow();
@@ -77,8 +79,6 @@ test("Create AWS VM", async ({ browser }) => {
 			? Object.keys(o1).length === Object.keys(o2).length &&
 				Object.keys(o1).every((p) => objectsEqual(o1[p], o2[p]))
 			: o1 === o2;
-	/*    https://spider.dc3n.navy.mil/my.policy
-      <button id="btn" onclick="javascript:SubmitResult(1);return 1;">OK, Proceed To Application</button>
-      /html/body/div/div/div[4]/button */
 
 	const my_path = "xpath=/html/body/ui-view";
+}
